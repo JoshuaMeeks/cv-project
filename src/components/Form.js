@@ -18,9 +18,10 @@ export const Form = () => {
       <div className='eductation-form'>
         <form className='education'>
           <h2>Education</h2>
+          <input type="text" placeholder='School'/>
           <input type="text" placeholder='Degree'/>
-          <input type="text" placeholder='City'/>
-          <input type="text" placeholder='Year completed'/>
+          <input type="text" placeholder='From'/>
+          <input type="text" placeholder='To'/>
           <button type='submit'>Submit</button>
         </form>
       </div>

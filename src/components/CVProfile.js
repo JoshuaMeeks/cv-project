@@ -16,9 +16,23 @@ export const CVProfile = () => {
       </div>
       <div className='education-profile'>
         <h2>Education</h2>
+        <div className='profile-card'>
+          <h3>Massachusetts Institute of Technology</h3>
+          <p>Computer Science</p>
+          <p>2009-2013</p>
+        </div>
       </div>
       <div className='work-experience-profile'>
         <h2>Work Experience</h2>
+        <div className='profile-card'>
+          <h3>Microsoft</h3>
+          <p>Junior Software Engineer</p>
+          <p>2014-2016</p>
+
+          <h3>Uber</h3>
+          <p>Software Engineer II</p>
+          <p>2016-2019</p>
+        </div>
       </div>
     </div>
   )
