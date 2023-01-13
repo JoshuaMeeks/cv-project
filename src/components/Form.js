@@ -1,12 +1,15 @@
 import React from 'react'
 
 export const Form = () => {
+
   return (
     <div className='form-container'>
       <div className='personal-info-form'>
         <form className='personal-info' action="submit">
           <h2>Personal Information</h2>
-          <input type="text" placeholder='First name'/>
+          <input 
+            type="text"
+            placeholder='First name'/>
           <input type="text" placeholder='Last name'/>
           <input type="text" placeholder='Address'/>
           <input type="tel" placeholder='Number'/>
