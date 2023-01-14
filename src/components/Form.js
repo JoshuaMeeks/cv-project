@@ -1,6 +1,6 @@
 import React from 'react'
 
-export const Form = () => {
+export const Form = ({ firstName, setFirstName, handleChange }) => {
 
   return (
     <div className='form-container'>
@@ -9,7 +9,9 @@ export const Form = () => {
           <h2>Personal Information</h2>
           <input 
             type="text"
-            placeholder='First name'/>
+            placeholder='First name'
+            value={firstName}
+            onChange={handleChange}/>
           <input type="text" placeholder='Last name'/>
           <input type="text" placeholder='Address'/>
           <input type="tel" placeholder='Number'/>

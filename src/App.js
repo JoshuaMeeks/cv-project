@@ -6,19 +6,21 @@ import { CVProfile } from "./components/CVProfile";
 
 
 function App() {
-  const [personal, setPersonal] = useState({
-    firstName: '',
-    lastName: '',
-    Address: '',
-    Number: '',
-    Email: ''
-  })
+  const [firstName, setFirstName] = useState('')
+
+  const handleChange = (e) => {
+    setFirstName(e.target.value)
+  }
 
   return (
     <div className="App">
       <Header />
       <div className="main-container">
-        <Form />
+        <Form 
+          firstName={firstName}
+          setFirstName={setFirstName}
+          handleChange={handleChange}
+        />
         <CVProfile />
       </div>
       <Footer />
