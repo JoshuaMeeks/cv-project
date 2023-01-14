@@ -7,10 +7,10 @@ import { CVProfile } from "./components/CVProfile";
 
 function App() {
   const [firstName, setFirstName] = useState('')
-
-  const handleChange = (e) => {
-    setFirstName(e.target.value)
-  }
+  const [lastName, setLastName] = useState('')
+  const [address, setAddress] = useState('')
+  const [number, setNumber] = useState('')
+  const [email, setEmail] = useState('')
 
   return (
     <div className="App">
@@ -19,7 +19,14 @@ function App() {
         <Form 
           firstName={firstName}
           setFirstName={setFirstName}
-          handleChange={handleChange}
+          lastName={lastName}
+          setLastName={setLastName}
+          address={address}
+          setAddress={setAddress}
+          number={number}
+          setNumber={setNumber}
+          email={email}
+          setEmail={setEmail}
         />
         <CVProfile />
       </div>

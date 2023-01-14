@@ -1,6 +1,13 @@
 import React from 'react'
 
-export const Form = ({ firstName, setFirstName, handleChange }) => {
+export const Form = ({ 
+  firstName, setFirstName,
+  lastName, setLastName,
+  address, setAddress,
+  number, setNumber,
+  email, setEmail,
+  handleChange
+}) => {
 
   return (
     <div className='form-container'>
@@ -11,11 +18,32 @@ export const Form = ({ firstName, setFirstName, handleChange }) => {
             type="text"
             placeholder='First name'
             value={firstName}
-            onChange={handleChange}/>
-          <input type="text" placeholder='Last name'/>
-          <input type="text" placeholder='Address'/>
-          <input type="tel" placeholder='Number'/>
-          <input type="email" placeholder='Email'/>
+            onChange={(e) => setFirstName(e.target.value)}
+          />
+          <input 
+            type="text" 
+            placeholder='Last name'
+            value={lastName}
+            onChange={(e) => setLastName(e.target.value)}
+          />
+          <input 
+            type="text"
+            placeholder='Address'
+            value={address}
+            onChange={(e) => setAddress(e.target.value)}
+          />
+          <input 
+            type="tel"
+            placeholder='Number'
+            value={number}
+            onChange={(e) => setNumber(e.target.value)}
+          />
+          <input 
+            type="email" 
+            placeholder='Email'
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
+          />
           <button type='submit'>Submit</button>
         </form>
       </div>
