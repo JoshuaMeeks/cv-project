@@ -1,14 +1,20 @@
 import React from 'react'
 
-export const CVProfile = () => {
+export const CVProfile = ({
+  firstName, 
+  lastName,
+  address,
+  number,
+  email
+}) => {
   return (
     <div className='cv-profile'>
       <div className='personal-info-profile'>
         <div className='personal-profile'>
-          <h3>John Doe</h3>
-          <p>123 Palmtree Lane, Miami, FL</p>
-          <p>555-835-0932</p>
-          <p>johndoeknows@mockmail.com</p>
+          <h3>{firstName} {lastName}</h3>
+          <p>{address}</p>
+          <p>{number}</p>
+          <p>{email}</p>
         </div>
         <div className='profile-picture'>
           <img src="https://cityofwilliamsport.org/wp-content/uploads/2021/03/malePlaceholder.jpg" alt='profile' />

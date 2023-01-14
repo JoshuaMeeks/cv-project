@@ -28,7 +28,13 @@ function App() {
           email={email}
           setEmail={setEmail}
         />
-        <CVProfile />
+        <CVProfile 
+          firstName={firstName}
+          lastName={lastName}
+          address={address}
+          number={number}
+          email={email}
+        />
       </div>
       <Footer />
     </div>
