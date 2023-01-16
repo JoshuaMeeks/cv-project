@@ -47,6 +47,7 @@ export const Form = ({
           <input 
             type="file" 
             placeholder='Upload Profile Image'
+            className='hidden'
             value={email}
             // onChange={(e) => setEmail(e.target.value)}
           />
