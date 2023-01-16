@@ -44,6 +44,12 @@ export const Form = ({
             value={email}
             onChange={(e) => setEmail(e.target.value)}
           />
+          <input 
+            type="file" 
+            placeholder='Upload Profile Image'
+            value={email}
+            // onChange={(e) => setEmail(e.target.value)}
+          />
           <button type='submit'>Submit</button>
         </form>
       </div>
